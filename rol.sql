@@ -22,4 +22,7 @@ create table anecdotas (
 create table capitulo (
     anecdota_id INT,
     personajes_id int
-)
+);
+
+ALTER TABLE anecdotas
+ADD anecdotas_id varchar(255);
