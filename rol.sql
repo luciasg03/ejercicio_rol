@@ -11,4 +11,15 @@ create table personas (
     id INT
 );
 
-create table
+create table anecdotas (
+    anecdota text,
+    titulo VARCHAR(255),
+    personajes_involucrados INT,
+    FOREIGN KEY (personajes_involucrados) 
+    REFERENCES personajes(ID)
+);
+
+create table capitulo (
+    anecdota_id INT,
+    personajes_id int
+)
